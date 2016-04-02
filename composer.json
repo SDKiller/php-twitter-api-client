@@ -1,0 +1,38 @@
+{
+    "name": "MarcosSegovia/php-twitter-api_client",
+    "type": "library",
+    "description": "Http client to easy access to Twitter API services",
+    "homepage": "https://github.com/MarcosSegovia/php-twitter-api-client",
+    "keywords": [
+        "twitter",
+        "api",
+        "http client",
+        "guzzle",
+        "MarcosSegovia"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marcos Segovia",
+            "email": "velozmarkdrea@gmail.com",
+            "homepage": "http://www.marcossegovia.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.9",
+        "phpunit/phpunit": "^5.0",
+        "guzzlehttp/guzzle": "^6.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "MarcosSegovia\\Twitter\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "MarcosSegovia\\Twitter\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "stable"
+}
