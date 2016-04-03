@@ -1,5 +1,5 @@
 {
-    "name": "marcossegovia/php-twitter-api_client",
+    "name": "marcossegovia/php-twitter-api-client",
     "type": "library",
     "description": "Http client to easy access to Twitter API services",
     "homepage": "https://github.com/MarcosSegovia/php-twitter-api-client",
