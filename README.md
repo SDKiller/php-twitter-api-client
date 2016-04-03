@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.org/MarcosSegovia/php-twitter-api-client.svg?branch=master)](https://travis-ci.org/MarcosSegovia/php-twitter-api-client)
-
 # php-twitter-api-client
 
 A Twitter API Client for [Application-only authentication](https://dev.twitter.com/oauth/application-only)
