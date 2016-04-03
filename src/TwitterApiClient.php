@@ -61,6 +61,13 @@ class TwitterApiClient
         );
     }
 
+    /**
+     *
+     * @param string $an_url
+     * @param array  $query_parameters
+     *
+     * @return \GuzzleHttp\Message\FutureResponse|\GuzzleHttp\Message\ResponseInterface|\GuzzleHttp\Ring\Future\FutureInterface|null
+     */
     public function get(
         $an_url,
         $query_parameters = []
@@ -71,6 +78,32 @@ class TwitterApiClient
                 'query' => $query_parameters
             ]
         );
+    }
+
+    /**
+     *
+     * @param string $query_operator ex: https://dev.twitter.com/rest/public/search -> Query operators
+     * @param string $lang
+     * @param string $result_type
+     * @param string $count
+     *
+     * @return \GuzzleHttp\Message\FutureResponse|\GuzzleHttp\Message\ResponseInterface|\GuzzleHttp\Ring\Future\FutureInterface|null
+     */
+    public function getSearch(
+        $query_operator,
+        $lang = 'es',
+        $count = '20',
+        $result_type = 'mixed'
+    )
+    {
+        $query_parameters = [
+            'q'           => urlencode($query_operator),
+            'lang'        => $lang,
+            'count'       => $count,
+            'result_type' => $result_type
+        ];
+
+        return $this->get('/1.1/search/tweets.json', $query_parameters);
     }
 
 }

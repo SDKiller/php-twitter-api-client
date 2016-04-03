@@ -39,6 +39,18 @@ final class TwitterApiClientTest extends \PHPUnit_Framework_TestCase
         $this->assertJson($tweets_in_json);
     }
 
+    public function testItShouldReturnListOfTweetsInJsonWithSearchCall()
+    {
+        $this->havingAnHttpTwitterAccess();
+        $guzzle_response = $this->twitter_api_client->getSearch('@NASA', 'en', '2');
+
+        $tweets_in_array = $guzzle_response->json();
+        $tweets_in_json  = json_encode($tweets_in_array);
+        var_dump($tweets_in_json);
+
+        $this->assertJson($tweets_in_json);
+    }
+
     public function havingAnHttpTwitterAccess()
     {
         $this->twitter_api_client = new TwitterApiClient(getenv('API_KEY'),
