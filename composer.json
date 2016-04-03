@@ -8,7 +8,8 @@
         "api",
         "http client",
         "guzzle",
-        "MarcosSegovia"
+        "MarcosSegovia",
+        "OAuth 2.0"
     ],
     "license": "MIT",
     "authors": [

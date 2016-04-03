@@ -30,7 +30,7 @@ final class TwitterApiClientTest extends \PHPUnit_Framework_TestCase
     {
         $this->havingAnHttpTwitterAccess();
 
-        $url              = '1.1/search/tweets.json';
+        $url              = '/1.1/search/tweets.json';
         $query_parameters = ['q' => '\“happy hour\”', 'lang' => 'es', 'count' => '1'];
         /** @var ResponseInterface $guzzle_response */
         $guzzle_response = $this->twitter_api_client->get($url, $query_parameters);
