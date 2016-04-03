@@ -13,3 +13,12 @@ With this API Client you will be able to:
 - Retrieve any user information
 
 THE EASY WAY :smile:
+
+
+##IMPORTANT !
+
+Before running the tests, add your own API_KEY and API_SECRET in the phpunit.xml so it can run tests to test your API connectivity
+```
+<env name="API_KEY" value="YOUR_TWITTER_API_KEY" />
+<env name="API_SECRET" value="YOUR_TWITTER_API_SECRET" />
+```

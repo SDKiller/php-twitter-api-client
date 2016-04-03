@@ -12,7 +12,10 @@
     stopOnFailure               = "false"
     syntaxCheck                 = "false"
     bootstrap                   = "vendor/autoload.php">
-
+    <php>
+        <env name="API_KEY" value="YOUR_TWITTER_API_KEY"/>
+        <env name="API_SECRET" value="YOUR_TWITTER_API_SECRET"/>
+    </php>
     <testsuites>
         <testsuite name="Application Test Suite">
             <directory>\tests</directory>
