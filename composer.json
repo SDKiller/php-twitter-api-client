@@ -20,7 +20,7 @@
         }
     ],
     "require": {
-        "php": ">=5.6.9",
+        "php": ">=5.6",
         "phpunit/phpunit": "^5.0",
         "guzzlehttp/guzzle": "^5.0",
         "commerceguys/guzzle-oauth2-plugin": "^2.0"
