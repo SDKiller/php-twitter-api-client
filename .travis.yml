@@ -1,0 +1,18 @@
+language: php
+
+php:
+    - '5.6'
+    - '7.0'
+
+env:
+    global:
+    
+before_install:
+    - composer self-update
+
+install: composer install --no-interaction --no-progress
+
+script: vendor/bin/phpunit -v
+
+notifications:
+    slack: winegram:T3kUS19dsHZtwIe6GLF3dziO
