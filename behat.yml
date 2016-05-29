@@ -1,0 +1,11 @@
+default:
+    autoload:
+        - %paths.base%/test/Integration
+    suites:
+        twitter:
+            paths:
+                - %paths.base%/test/Integration/Feature
+            contexts:
+                - MarcosSegovia\Twitter\Test\Integration\Context\DefaultContext
+        formatters:
+            pretty: true

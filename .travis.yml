@@ -14,7 +14,7 @@ before_install:
 
 install: composer install --no-interaction --no-progress
 
-script: vendor/bin/phpunit -v
+script: vendor/bin/behat -s twitter -v
 
 notifications:
     slack: winegram:T3kUS19dsHZtwIe6GLF3dziO
